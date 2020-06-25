@@ -1,3 +1,5 @@
+App which demonstrates use of typescript for a web app. The app itself is a landing page for a generic company website
+
 Getting Started
 ---------------
 1. In the terminal enter the command `npm install -g grunt-cli` to install the [Grunt](https://gruntjs.com/) task runner globally.
