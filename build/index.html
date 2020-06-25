@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Papirfly UK Development Task</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<style>
+		html {
+			box-sizing: border-box;
+		}
+
+		*,
+		*:before,
+		*:after {
+			box-sizing: inherit;
+		}
+
+		html,
+		body {
+			margin: 0;
+			border: 0;
+			padding: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #e8e8e8;
+		}
+
+		input[type=number] {
+			text-align: center;
+		}
+
+		#main {
+			display: flex;
+			width: 100%;
+			height: 100%;
+		}
+
+		#app-container {
+			display: flex;
+			width: calc(100% - 300px);
+			height: 100%;
+		}
+
+		#app {
+			background-color: #fff;
+			margin: auto;
+			border: 1px solid #ccc;
+		}
+
+		#sidepalette {
+			width: 300px;
+			height: 100%;
+			min-height: 960px;
+			border-left: 1px solid #ccc;
+			padding: 20px;
+			background-color: #fff;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div id="main" role="main">
+
+		<div id="app-container">
+			<canvas id="app" width="678" height="960"></canvas>
+		</div>
+
+		<div id="sidepalette" class="container">
+			<div class="row">
+				<div class="col-12">
+					<h4>Page Controls</h4>
+					<hr>
+				</div>
+			</div>
+			<form>
+				<div class="form-group row">
+					<label id="label-stars" class="col-6 col-form-label">Number of Stars</label>
+					<div class="col-6">
+						<input id="stars" name="stars" type="number" class="form-control" value="4" min="1" max="4" aria-label="Number of Stars" aria-describedby="label-stars">
+					</div>
+					<label id="label-buckets" class="col-6 col-form-label">Number of Buckets</label>
+					<div class="col-6">
+						<input id="buckets" name="buckets" type="number" class="form-control" value="3" min="2" max="3" aria-label="Number of Buckets" aria-describedby="label-buckets">
+					</div>
+				</div>
+			</form>
+		</div>
+
+	</div>
+
+	<script src="js/index.js"></script>
+
+</body>
+
+</html>
